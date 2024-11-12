@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandyHome-Home Services Booking</title>
+   
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/images/fevicon.png" type="image/x-icon">
+
+
+
+    <style>
+        .navbar-nav .nav-link {
+            font-size: 1.3rem;
+        }
+
+       
+    </style>
+
+    <!-- card -->
+    <style>
+        .services h2 {
+            font-size: 1.5rem; 
+            text-align: center;
+        }
+    
+        .card {
+            max-width: 320px; 
+            width:100%;
+            margin: 0 auto; 
+            
+            border-radius: 8px;
+            
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+            
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    
+        .card img {
+            height: 150px; 
+            object-fit: cover;
+        }
+    
+        .card-title {
+            font-size: 1.1rem; 
+        }
+    
+        .card-text {
+            font-size: 0.9rem; 
+        }
+
+        .card-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            color: rgb(14, 13, 13);
+            
+        }
+        .card-text{
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+
+        .navbar-logo {
+            margin-right: 10px;
+        }
+    </style>
+
+   
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top" class="container"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="/images/handyHome.png" style="height:80px;" class="navbar-logo">
+            <a class="navbar-brand" href="#"><b>HandyHome</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">xyz</a>
+                    </li> -->
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cleaning.html">Home Cleaning</a></li>
+                            <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+                            <li><a class="dropdown-item" href="repair.html">Appliances Repair</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="test.html">Cart</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contactus.html">ContactUs</a>
+                    </li>
+                    <li class="nav-item " style="margin-left:1200px;">
+                        <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                    </li>
+
+
+
+
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success color-black" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br><br><br><br>
+    <div class="content">
+        <div>
+            <h1 style="text-align: center;"><b>Home service at your doorstep</b></h1><br><br>
+        </div>
+
+        <div>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/washing.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <!-- <div class="carousel-item">
+                    <img src="/images/washing.jpg" class="d-block w-100" alt="...">
+                  </div> -->
+                    <div class="carousel-item">
+                        <img src="/images/i1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/i2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/i3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+        <br><br><hr><br>
+        <div class="paragraph">
+
+            <br>
+            <h1 id="tt"><b><span style="color: green;">HandyHome</span></b> - Your Trusted Home Services Provider</h1><br>
+            <p style="font-size: x-large;">At <b>HandyHome</b>, we are dedicated to offering top-notch home services, specializing in <b>house
+                    cleaning</b>, <b>appliance repair</b>, and <b>plumbing</b>. Based in Pune, we bring years
+                of experience to ensure your home is not just clean but also functioning perfectly.</p>
+            <br><br>
+            <h2 style="color: blue;">Our Services</h2><br>
+            <ul style="font-size: x-large;">
+                <li><b>House Cleaning</b>: Our comprehensive house cleaning services ensure every corner of your home is
+                    spotless. We cover everything from dusting and vacuuming to deep cleaning kitchens and bathrooms.
+                </li>
+                <li><b>Appliance Repair</b>: Our skilled technicians are trained to handle various household appliances,
+                    ensuring they operate efficiently. Whether it's a malfunctioning refrigerator, washing machine, or
+                    oven, we've got you covered.</li>
+                <li><b>Plumbing</b>: We provide reliable plumbing services for any issue, big or small. From fixing
+                    leaks and clogs to installing new fixtures, our experienced plumbers are ready to help.</li>
+            </ul>
+            <br><br>
+            <h2 style="color: blue;">Why Choose HandyHome?</h2><br>
+            <ul style="font-size: x-large;">
+                <li><b>Professional Technicians</b>: Our team is made up of experienced, customer-friendly professionals
+                    who prioritize your satisfaction.</li>
+                <li><b>Quality Assurance</b>: We use advanced cleaning methods and repair techniques to maintain high
+                    standards of hygiene and functionality in your home.</li>
+                <li><b>Flexible Scheduling</b>: We understand your time is valuable. That's why we offer flexible
+                    booking options that fit your schedule.</li>
+                <li><b>Comprehensive Coverage</b>: HandyHome is proud to serve not only pune but also
+                    surrounding areas, ensuring that more homes can benefit from our expert services.</li>
+            </ul>
+            <br><br>
+            <h2 style="color: blue;">Our Commitment</h2><br>
+            <p style="font-size: x-large;">At <b>HandyHome</b>, we are committed to creating a clean, efficient, and safe environment for you and
+                your family. We believe that a well-maintained home enhances your quality of life, and we strive to make
+                it possible for everyone.</p>
+
+            <a href="#"><p style="color:blue">Contact us today to learn more about our services and how we can assist you in making your home a better
+                place.</p></a>
+                <br>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+
+
+    </div>
+
+
+    <div class="services">
+        <h2 style="font-size: xxx-large;"><b>What are you looking for?<b></h2>
+            <br><br>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <a href="#"><div class="col">
+                  <div class="card h-100">
+                    <img src="/images/appliancesrepair.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Appliances repair & services</b></h5>
+                      <p class="card-text">Professional appliance repair services for quick, reliable fixes to keep your home running smoothly and efficiently</p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+
+                <a href="cleaning.html"><div class="col">
+                  <div class="card h-100">
+                    <img src="/images/bathroomkitchen.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Bathroom & kitchen cleaning</b></h5>
+                      <p class="card-text">Comprehensive bathroom and kitchen cleaning services for spotless surfaces, sanitized spaces, and a fresh, hygienic environment</p>
+                    </div>
+                  </div>
+                </div>
+                </a>
+                
+                <a href="#"><div class="col">
+                  <div class="card h-100">
+                    <img src="/images/plumberimage.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title"><b>Plumbing</b></h5>
+                      <p class="card-text">Expert plumbing solutions for all your home needs, from leak repairs to installations. Reliable, efficient, and just a call away!<br><br></p>
+                    </div>
+                  </div>
+                </div></a>
+                <!-- <div class="col">
+                  <div class="card h-100">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div><br><br><hr><br>
+    </div>
+
+    <div class="mostbooked">
+        <h2><b>Most booked services</b></h2><br><br><br>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <a href="#"><div class="col">
+              <div class="card">
+                <img src="/images/acservice.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title"><b>Power saver AC service</b></h4>
+                  <label>⭐4.3 (1.2k)</label>
+                  <p class="card-text">₹599</p>
+                </div>
+              </div>
+            </div></a>
+
+            <a href="cleaning.html"><div class="col">
+              <div class="card">
+                <img src="/images/intencebathroom.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title"><b>Intense bathroom clean</b></h4>
+                  <label>⭐4.3 (7.5k)</label>
+                  <p class="card-text"> ₹519</p>
+                </div>
+              </div>
+            </div></a>
+
+            <a href="#"><div class="col">
+              <div class="card">
+                <img src="/images/sofacleaning.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title"><b>Sofa cleaning</b></h4>
+                  <label>⭐4.3 (3k)</label>
+                  <p class="card-text">₹569</p>
+                </div>
+              </div>
+            </div></a>
+
+            <a href="#"><div class="col">
+              <div class="card">
+                <img src="/images/tvrepair.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h4 class="card-title"><b>TV repair<b></h4>
+                    <label>⭐4.7 (1.7k)</label>
+                  <p class="card-text">₹249</p>
+                </div>
+              </div>
+            </div></a>
+          </div>
+    </div>
+
+    <footer class="footer ">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/handyHome.png" alt="HandyHomelogo">
+                <p>HandyHome</p>
+            </div>
+            
+            <div class="footer-contact">
+                <label>Contact Us: (+91 - 9511694958)</label><br>
+                <label>Email: HandyHome@gmail.com</label><br><br>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/hachitheindie/?hl=en" target="_blank">
+                    <img src="/images/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/KDhakad07/communities/explore" target="_blank">
+                    <img src="/images/twitter.png" alt="Twitter">
+                </a><br><br>
+                <span>© Copyright 2024 HandyHome. All rights reserved. </span>
+            </div>
+        </div>
+       
+    </footer>
+    <!-- Bootstrap JS and dependencies (for responsive navbar) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

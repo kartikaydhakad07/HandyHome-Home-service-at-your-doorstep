@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandyHome-Home Services Booking</title>
+
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/images/fevicon.png" type="image/x-icon">
+
+
+    <style>
+        .navbar-nav .nav-link {
+            font-size: 1.3rem;
+        }
+
+        .navbar-logo {
+            margin-right: 10px;
+        }
+
+        .headline {
+            margin: 10px;
+        }
+    </style>
+    <style>
+        .small-card-img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-radius: 8px;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+
+        .content-wrap {
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-wrap">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top"
+            class="container" data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="/images/handyHome.png" style="height:80px;" class="navbar-logo">
+                <a class="navbar-brand" href="#"><b>HandyHome</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cleaning.html">Home Cleaning</a></li>
+                                <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+                                <li><a class="dropdown-item" href="repair.html">Appliances Repair</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="test.html">Cart</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contactus.html">ContactUs</a>
+                        </li>
+                        <li class="nav-item " style="margin-left:1200px;">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+
+
+
+
+                    </ul>
+                    <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success color-black" type="submit">Search</button>
+                </form> -->
+                </div>
+            </div>
+        </nav><br><br><br><br><br><br>
+
+
+        <div class="headline">
+            <h1><b>Combo</b></h1>
+        </div><br><br><br>
+
+        <!-- bathroom clean -->
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Classic bathroom cleaning (pack of 2)</h5>
+                        <p class="card-text">₹898 - 2 hrs</p><br>
+                        <p class="card-text">A standard service ensuring sinks, toilets, and mirrors are thoroughly
+                            scrubbed and sanitized for a fresh and clean bathroom.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Intense bathroom cleaning (pack of 2)</h5>
+                        <p class="card-text">₹1,038 - 2 hrs 40 mins</p>
+                        <br>
+                        <p class="card-text">A deep cleaning service that tackles tough stains and grime in
+                            hard-to-reach areas for a sparkling and beautiful finish .</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Classic bathroom cleaning (pack of 3)</h5>
+                        <p class="card-text">₹1,347 - 3 hrs</p>
+                        <br>
+                        <p class="card-text">An extended standard cleaning service for larger bathrooms, maintaining
+                            hygiene and cleanliness throughout.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Intense bathroom cleaning (pack of 3)</h5>
+                        <p class="card-text">₹1,557 - 4 hrs</p>
+                        <br>
+                        <p class="card-text">An extensive deep cleaning service designed to eliminate stubborn stains
+                            and ensure a spotless, sanitized environment.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr><br><br>
+
+        <!-- modal .....................................-->
+        <!-- Modal Structure -->
+        <!-- Modal Structure -->
+        <!-- Modal Structure -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book an Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="bookingForm">
+                            <div class="mb-3">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactInput" class="form-label">Contact Number</label>
+                                <input type="tel" class="form-control" id="contactInput" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="addressInput" class="form-label">Address</label>
+                                <textarea class="form-control" id="addressInput" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dateTimeInput" class="form-label">Schedule Date & Time</label>
+                                <input type="datetime-local" class="form-control" id="dateTimeInput" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="packageSelect" class="form-label">Choose a Package</label>
+                                <select class="form-select" id="packageSelect" required>
+                                    <option selected disabled>Select a package</option>
+                                    <option value="classic-bathroom-pack-2">Classic Bathroom Cleaning (Pack of 2)
+                                    </option>
+                                    <option value="intense-bathroom-pack-2">Intense Bathroom Cleaning (Pack of 2)
+                                    </option>
+                                    <option value="classic-bathroom-pack-3">Classic Bathroom Cleaning (Pack of 3)
+                                    </option>
+                                    <option value="intense-bathroom-pack-3">Intense Bathroom Cleaning (Pack of 3)
+                                    </option>
+                                    <option value="classic-bathroom">Classic Bathroom Cleaning</option>
+                                    <option value="intense-bathroom">Intense Bathroom Cleaning</option>
+                                    <option value="move-in-bathroom">Move-in Bathroom Cleaning</option>
+                                    <option value="empty-kitchen">Empty Kitchen Cleaning</option>
+                                    <option value="complete-kitchen">Complete Kitchen Cleaning</option>
+                                    <option value="chimney-cleaning">Chimney Cleaning</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="submitAppointmentButton">Submit
+                            Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- bathroom pack -->
+        <div class="headline">
+            <h1><b>Bathroom cleaning</b></h1>
+        </div><br><br><br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/images/classicbathroom.webp" class="card-img-top small-card-img"
+                        alt="Classic bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic bathroom cleaning</h5>
+                        <p class="card-text">₹529 - 1 hrs</p><br>
+                        <p class="card-text">A standard cleaning service that includes scrubbing sinks, toilets,
+                            showers,
+                            and mirrors, ensuring all surfaces are sanitized and free of grime.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/images/intensebathroom.webp" class="card-img-top small-card-img"
+                        alt="Intense bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Intense bathroom cleaning</h5>
+                        <p class="card-text">₹449 - 1 hrs 30 mins</p><br>
+                        <p class="card-text">A deep cleaning service that targets tough stains and hard-to-reach areas,
+                            including grout and tiles, providing a thorough scrub for a spotless finish.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/images/moveinbathroom.webp" class="card-img-top small-card-img"
+                        alt="Move-in bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Move-in bathroom cleaning</h5>
+                        <p class="card-text">₹499 - 1 hrs</p><br>
+                        <p class="card-text">A comprehensive cleaning designed for newly occupied bathrooms, ensuring
+                            all
+                            surfaces, fixtures, and fittings are deeply cleaned and sanitized before use.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr><br><br>
+
+
+
+        <!-- kitchen cleaning -->
+        <div class="headline">
+            <h1><b>Kitchen cleaning</b></h1>
+        </div><br><br><br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="/images/emptykitchen.jpg" class="card-img-top small-card-img"
+                        alt="Classic bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Empty kitchen cleaning</h5>
+                        <p class="card-text">₹1299 - 2 hrs</p><br>
+                        <p class="card-text">A thorough cleaning of an unoccupied kitchen, focusing on deep cleaning
+                            cabinets, countertops, floors, and walls to prepare for renovations .</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/images/completekitchin.png" class="card-img-top small-card-img"
+                        alt="Intense bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Complete kitchen cleaning</h5>
+                        <p class="card-text">₹1999 - 2 hrs 30 mins</p><br>
+                        <p class="card-text">An extensive cleaning service that includes sanitizing surfaces,
+                            appliances,
+                            and floors, ideal for maintaining a hygienic cooking environment.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="/images/chimneyclean.webp" class="card-img-top small-card-img"
+                        alt="Move-in bathroom cleaning">
+                    <div class="card-body">
+                        <h5 class="card-title">Chimney cleaning</h5>
+                        <p class="card-text">₹499 - 1 hrs</p><br>
+                        <p class="card-text">The removal of soot and debris from the chimney to prevent fires and ensure
+                            safe ventilation for fireplaces or stoves.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <hr><br><br>
+
+
+
+
+
+
+    </div>
+    <footer class="footer ">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/handyHome.png" alt="HandyHomelogo">
+                <p>HandyHome</p>
+            </div>
+
+            <div class="footer-contact">
+                <label>Contact Us: (+91 - 9511694958)</label><br>
+                <label>Email: HandyHome@gmail.com</label><br><br>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/hachitheindie/?hl=en" target="_blank">
+                    <img src="/images/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/KDhakad07/communities/explore" target="_blank">
+                    <img src="/images/twitter.png" alt="Twitter">
+                </a><br><br>
+                <span>© Copyright 2024 HandyHome. All rights reserved. </span>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            function sendRequest(url, method, body = {}) {
+                return fetch(url, {
+                    method: method,
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(body),
+                }).then(response => response.json());
+            }
+
+            const submitButton = document.getElementById("submitAppointmentButton");
+            if (submitButton) {
+                submitButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                  
+                    const name = document.getElementById("nameInput").value;
+                    const contact = document.getElementById("contactInput").value;
+                    const address = document.getElementById("addressInput").value;
+                    const packageType = document.getElementById("packageSelect").value;
+                    const dateTime = document.getElementById("dateTimeInput").value;
+
+                    
+                    if (!packageType) {
+                        alert("Please select a package.");
+                        return;
+                    }
+
+                   
+                    sendRequest("http://localhost:4000/appointment/addAppointment", "POST", {
+                        name: name,
+                        contact: contact,
+                        address: address,
+                        package: packageType,
+                        schedule: dateTime,
+                    })
+                        .then(data => {
+                            alert(data.message);
+                            if (data.message === "appointment added successfully!!") {
+                                document.querySelector("form").reset();
+                                
+                                const modal = bootstrap.Modal.getInstance(document.getElementById('bookingModal'));
+                                modal.hide();
+                            }
+                        })
+                        .catch(error => {
+                            console.error("Error:", error);
+                            alert("Failed to add appointment.");
+                        });
+                });
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

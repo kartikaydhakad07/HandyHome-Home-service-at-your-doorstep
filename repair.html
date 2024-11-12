@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandyHome - Appliance Repair Services</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/images/fevicon.png" type="image/x-icon">
+    <style>
+        .navbar-nav .nav-link {
+            font-size: 1.3rem;
+        }
+
+        .navbar-logo {
+            margin-right: 10px;
+        }
+
+        .headline {
+            margin: 10px;
+        }
+
+        .small-card-img {
+            width: 100%;
+            height: 290px;
+            object-fit: cover;
+        }
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-wrap {
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-wrap">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top"
+            class="container" data-bs-theme="dark">
+            <div class="container-fluid">
+                <img src="/images/handyHome.png" style="height:80px;" class="navbar-logo">
+                <a class="navbar-brand" href="#"><b>HandyHome</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cleaning.html">Home Cleaning</a></li>
+                            <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+                            <li><a class="dropdown-item" href="repair.html">Appliances Repair</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="test.html">Cart</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link active" href="contactus.html">ContactUs</a></li>
+                        <li class="nav-item " style="margin-left:1200px;">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav><br><br><br><br><br><br>
+
+        <div class="headline">
+            <h1><b>Most common appliance Repair Packages</b></h1>
+        </div><br><br><br>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Refrigerator Repair</h5>
+                        <p class="card-text">₹699 - 1.5 hrs</p>
+                        <p class="card-text">Standard repair service for common refrigerator issues like temperature
+                            regulation and minor leaks.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Washing Machine Repair</h5>
+                        <p class="card-text">₹1,299 - 2 hrs</p>
+                        <p class="card-text">Includes diagnosis and repair for drum issues, motor problems in washing
+                            machines.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic AC Servicing</h5>
+                        <p class="card-text">₹899 - 1 hr</p>
+                        <p class="card-text">Includes cleaning filters, checking gas levels, and ensuring proper air
+                            circulation for optimal performance.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Microwave Oven Repair</h5>
+                        <p class="card-text">₹599 - 1 hr</p>
+                        <p class="card-text">Repair for heating issues, door malfunctions, and general wear and tear for
+                            most microwave oven models.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">Book Appointment</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr><br><br>
+
+        <!-- Booking Modal -->
+        <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookingModalLabel">Book an Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3"><label for="nameInput" class="form-label">Name</label><input type="text"
+                                    class="form-control" id="nameInput" required></div>
+                            <div class="mb-3"><label for="contactInput" class="form-label">Contact Number</label><input
+                                    type="tel" class="form-control" id="contactInput" required></div>
+                            <div class="mb-3"><label for="addressInput" class="form-label">Address</label><textarea
+                                    class="form-control" id="addressInput" rows="3" required></textarea></div>
+                            <div class="mb-3"><label for="dateTimeInput" class="form-label">Schedule Date &
+                                    Time</label><input type="datetime-local" class="form-control" id="dateTimeInput"
+                                    required></div>
+                                    <div class="mb-3">
+                                        <label for="serviceType" class="form-label">Select Service</label>
+                                        <select class="form-select" id="serviceType" required>
+                                            <option value="" disabled selected>Select a Service</option>
+                                            <option value="chimney">Chimney Repair & Service</option>
+                                            <option value="geyser">Geyser Repair & Service</option>
+                                            <option value="laptop">Laptop Repair & Service</option>
+                                            <option value="refrigerator">Refrigerator Repair</option>
+                                            <option value="washingMachine">Washing Machine Repair</option>
+                                            <option value="microwave">Microwave Repair</option>
+                                            <option value="television">Television Repair</option>
+                                            <option value="waterPurifier">Water Purifier Repair & Service</option>
+                                            <option value="inverter">Inverter Repair & Service</option>
+                                            <option value="ac">AC Repair & Service</option>
+                                            <option value="fan">Fan Repair & Service</option> <!-- New Option -->
+                                        </select>
+                                    </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit Booking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <!-- Appliance Repair Services -->
+        <div class="headline">
+            <h1><b>Other appliance Repair & Service</b></h1>
+        </div><br><br><br>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Chimney Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/chimneyclean.webp" class="card-img-top small-card-img"
+                        alt="Chimney Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Chimney Repair & Service</h5>
+                        <p class="card-text">Professional service to maintain and repair chimneys.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Geyser Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/gyser.jpg" class="card-img-top small-card-img" alt="Geyser Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Geyser Repair & Service</h5>
+                        <p class="card-text">Efficient repair for geysers to ensure hot water supply.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Laptop Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/laptop.jpg" class="card-img-top small-card-img" alt="Laptop Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Repair & Service</h5>
+                        <p class="card-text">Comprehensive laptop repair services for all brands.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Refrigerator Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/refridge.jpg" class="card-img-top small-card-img"
+                        alt="Refrigerator Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Refrigerator Repair</h5>
+                        <p class="card-text">Reliable repair for refrigerators of all sizes.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Fan Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/fanrepair.jpg" class="card-img-top small-card-img" alt="Fan Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Fan Repair & Service</h5>
+                        <p class="card-text">Repair and maintenance service for ceiling and table fans.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Inverter Repair -->
+            <div class="col">
+                <div class="card">
+                    <img src="/images/invertor.webp" class="card-img-top small-card-img"
+                        alt="Inverter Repair">
+                    <div class="card-body">
+                        <h5 class="card-title">Inverter Repair & Service</h5>
+                        <p class="card-text">Reliable repair services for inverters to ensure power backup.</p><br>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#bookingModal">
+                            Book Appointment
+                        </button><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div><br><br><br>
+    <hr><br><br>
+    <footer class="footer ">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/images/handyHome.png" alt="HandyHomelogo">
+                <p>HandyHome</p>
+            </div>
+
+            <div class="footer-contact">
+                <label>Contact Us: (+91 - 9511694958)</label><br>
+                <label>Email: HandyHome@gmail.com</label><br><br>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/hachitheindie/?hl=en" target="_blank">
+                    <img src="/images/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="/images/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://x.com/KDhakad07/communities/explore" target="_blank">
+                    <img src="/images/twitter.png" alt="Twitter">
+                </a><br><br>
+                <span>© Copyright 2024 HandyHome. All rights reserved. </span>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

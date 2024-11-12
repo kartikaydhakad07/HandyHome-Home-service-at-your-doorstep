@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration or Sign Up Form</title> 
+    <link rel="stylesheet" href="./signup.css">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="/images/fevicon.png" type="image/x-icon">
+
+
+    <style>
+      .navbar-logo {
+        margin-right: 10px;
+    }
+    </style>
+  </head>
+<body style="background-color: #caf0f8">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body fixed-top" class="container"
+  data-bs-theme="dark">
+  <div class="container-fluid">
+      <img src="/images/handyHome.png" style="height:80px;" class="navbar-logo">
+      <a class="navbar-brand" href="#"><b>HandyHome</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">xyz</a>
+              </li> -->
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="cleaning.html">Home Cleaning</a></li>
+                    <li><a class="dropdown-item" href="plumbing.html">Plumbing</a></li>
+                    <li><a class="dropdown-item" href="repair.html">Appliances Repair</a></li>
+                      <li>
+                          <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">test</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contactus.html">ContactUs</a>
+              </li>
+              <!-- <li class="nav-item " style="margin-left:1200px;">
+                  <a class="nav-link active" aria-current="page" href="#">Login</a>
+              </li> -->
+
+
+
+
+          </ul>
+          <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2 bg-light" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success color-black" type="submit">Search</button>
+          </form> -->
+      </div>
+  </div>
+</nav>
+
+
+  
+
+
+
+
+
+
+
+
+
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form onsubmit="registerUser(event)">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password1" placeholder="Create password" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="password" placeholder="Confirm password" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox" required>
+        <h3>I accept all terms & conditions</h3>
+      </div>
+      <div class="input-box button">
+        <input type="submit" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="login.html">Login now</a></h3>
+      </div>
+    </form>
+    <!-- <script src="./signUp.js"></script> -->
+    <script src="signUp.js"></script>
+  </div>
+
+  <!-- foot -->
+  <footer class="footer ">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/images/handyHome.png" alt="HandyHomelogo">
+            <p>HandyHome</p>
+        </div>
+        
+        <div class="footer-contact">
+            <label>Contact Us: (+91 - 9511694958)</label><br>
+            <label>Email: HandyHome@gmail.com</label><br><br>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/hachitheindie/?hl=en" target="_blank">
+                <img src="/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img src="/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://x.com/KDhakad07/communities/explore" target="_blank">
+                <img src="/images/twitter.png" alt="Twitter">
+            </a><br><br>
+            <span>© Copyright 2024 HandyHome. All rights reserved. </span>
+        </div>
+    </div>
+   
+</footer>
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
